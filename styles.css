@@ -28,23 +28,22 @@ ul.tabs li a {
     text-decoration:none;
     font-size:16px;
     font-weight:bold;
-    /* text-transform:uppercase; */
     border:1px solid #000000; 
 }
 ul.tabs li a:hover {
-    background-color:#2f343a;
-    border-color:#2f343a;
+    background-color:black;
+    border-color:#000000;
 }
 ul.tabs li a.active {
     background-color:#ffffff;
     color: rgb(0, 0, 0);
-    border:1px solid #464c54; 
+    border:1px solid #000000; 
     border-bottom: 1px solid #ffffff;
 }
 
 .content {
     background-color:#ffffff;
-    padding:10px;
+    padding: 5px;
     border:1px solid #464c54;   
 }
 #content_2, #content_3 { display:none; }
