@@ -28,7 +28,7 @@ ul.tabs li a {
     text-decoration:none;
     font-size:12px;
     font-weight:bold;
-    text-transform:uppercase;
+    /* text-transform:uppercase; */
     border:1px solid #464c54; 
 }
 ul.tabs li a:hover {
