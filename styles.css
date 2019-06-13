@@ -7,6 +7,11 @@ ul {
     list-style: none;
 }
 
+.flex {
+     display: inline-flex;
+    flex-direction: column;
+}
+
 .tabbed_area {
     border:1px solid #000000;
     background-color:#a8a8a8;
