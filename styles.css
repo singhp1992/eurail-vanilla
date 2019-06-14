@@ -41,6 +41,10 @@ header {
     flex-direction: column;
 }
 
+#a li a {
+    flex-wrap: wrap
+}
+
 /* tabs */
 
 nav.tabs li {
