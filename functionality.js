@@ -40,10 +40,10 @@ fetch('https://api.randomuser.me/')
     .catch(error => console.error(error))
 
 // Creating another div
-const $div = $('<button>more info here</button>');
+const $div = $('<div>more info here</div>');
 
 // Adding another div to the section
-$('.main').append($div)
+$('.container').append($div)
 
 // add a class name to the div
 $('div').addClass('content')
