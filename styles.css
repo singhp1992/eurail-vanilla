@@ -6,16 +6,21 @@ header {
     display: inline-flex;
     flex-direction: column;
 } */
+
+/* cards */
+
+.cards {
+    height: 300px;
+    width: 74.5%;
+    margin: 1px auto;
+    background-color: red;
+}
+
 /* tabs */
 
-ul.tabs {
-    margin:0px; 
-    padding:0px;
-    text-align: center;
-}
 ul.tabs li {
     list-style:none;
-    display:inline;
+    display:inline-flex;
 }
 
 ul.tabs li a {
@@ -83,10 +88,10 @@ ul.tabs li a.active {
 
 /* added div */
 
-.names {
+/* .names {
   height: 300px;
   width: 74.5%;
   margin: 8px auto;
   background-color: powderblue;
     border:1px solid #000000; 
-}
+} */
