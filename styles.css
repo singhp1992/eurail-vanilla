@@ -40,6 +40,7 @@ ul.tabs li a {
 ul.tabs li a:hover {
     background-color:black;
     border-color:#000000;
+    cursor: pointer;
 }
 ul.tabs li a.active {
     background-color:#ffffff;
