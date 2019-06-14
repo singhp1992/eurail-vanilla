@@ -34,6 +34,9 @@ const $div = $('<div>more info here</div>');
 // Adding another div to the section
 $('.main').append($div)
 
+// add a class name to the div
+$('div').addClass('content')
+
 
 
 
