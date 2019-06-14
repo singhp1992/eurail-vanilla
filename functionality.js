@@ -41,6 +41,11 @@ $('.container').append($div)
 // add a class name to the div
 $('div').addClass('content')
 
+// adding a ul to the div
+const $ul = $('<ul>1</ul>')
+
+// appending into the div
+$('.content').append($ul)
 
 // Event handlers
 // on click, new div appears 
