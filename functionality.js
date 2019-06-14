@@ -11,7 +11,9 @@ var configJson = {
 
 console.log(configJson.title)
 
+// Dynamically creating structure
 
+// creating tabs
 $(document).ready(function () {
     var tabs = { "1": "a", "2": "b", "3": "c", "4": "d", "5": "e", "6": "f",
         "7": "g", "8": "h", "9": "i", "10": "j", "11": "k", "12": "l", "13": "m", "14": "n",
@@ -23,31 +25,24 @@ $(document).ready(function () {
     });
 });
 
-// Adding id to li 
+// Adding ids to every <li> tags 
 $(document).ready(function() {
     $("nav li").each(function (i) {
         $(this).attr("id", i+1 );
     });
 })
 
-// API FETCH
-fetch('https://api.randomuser.me/')
-    .then(response => response.json())
-    .then(data => {
-        console.log(data) // Prints result from `response.json()` in getRequest
-        
-    })
-    .catch(error => console.error(error))
-
-// Creating another div
+// Creating another div below the tabs
 const $div = $('<div>more info here</div>');
 
-// Adding another div to the section
+// Appending div into the container
 $('.container').append($div)
 
 // add a class name to the div
 $('div').addClass('content')
 
+
+// Event handlers
 // on click, new div appears 
 $('li').on('click',)
 
@@ -62,6 +57,14 @@ $('button').attr("id", "preeti")
 //     });
 // })
 
+// api fetch
+fetch('https://api.randomuser.me/')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data) // Prints result from `response.json()` in getRequest
+
+    })
+    .catch(error => console.error(error))
 
 
 

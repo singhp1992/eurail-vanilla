@@ -47,12 +47,13 @@ nav.tabs li a.active {
     border-bottom: 1px solid #ffffff;
 }
 
-/* .content {
+.content {
     background-color:#ffffff;
-    padding: 5px;
-    border:1px solid #464c54; 
+    /* padding: 10px; */
+    /* border:1px solid #464c54;  */
     height: 75%;  
-} */
+    text-align: center;
+} 
 /* #content_2, #content_3 { display:none; } */
 
 /* ul.tabs {
