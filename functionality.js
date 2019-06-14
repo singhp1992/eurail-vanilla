@@ -28,28 +28,28 @@ $(document).ready(function() {
     });
 })
 
-// Creating another div
-const $div = $('<button>more info here</button>');
+// // Creating another div
+// const $div = $('<button>more info here</button>');
 
-// Adding another div to the section
-$('.main').append($div)
+// // Adding another div to the section
+// $('.main').append($div)
 
-// add a class name to the div
-$('div').addClass('content')
+// // add a class name to the div
+// $('div').addClass('content')
 
-// on click, new div appears 
-$('li').on('click',)
+// // on click, new div appears 
+// $('li').on('click',)
 
-// add id to button in div
-$('button').attr("id", "preeti")
+// // add id to button in div
+// $('button').attr("id", "preeti")
 
-// make something appear when button is clicked
-$(document).ready(function () {
-    $('#1').on('click', function () {
-        var newButton = '<p>hehehe</p>';
-        $('.main').append(newButton)
-    });
-})
+// // make something appear when button is clicked
+// $(document).ready(function () {
+//     $('#1').on('click', function () {
+//         var newButton = '<p>hehehe</p>';
+//         $('.main').append(newButton)
+//     });
+// })
 
 
 
