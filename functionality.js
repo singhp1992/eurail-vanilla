@@ -23,33 +23,41 @@ $(document).ready(function () {
 
 // Adding id to li 
 $(document).ready(function() {
-    $("ul li").each(function (i) {
+    $("nav li").each(function (i) {
         $(this).attr("id", i+1 );
     });
 })
 
-// Creating another div
-const $div = $('<button>more info here</button>');
+// API FETCH
+fetch('https://api.randomuser.me/')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data) // Prints result from `response.json()` in getRequest
+    })
+    .catch(error => console.error(error))
 
-// Adding another div to the section
-$('.main').append($div)
+// // Creating another div
+// const $div = $('<button>more info here</button>');
 
-// add a class name to the div
-$('div').addClass('content')
+// // Adding another div to the section
+// $('.main').append($div)
 
-// on click, new div appears 
-$('li').on('click',)
+// // add a class name to the div
+// $('div').addClass('content')
 
-// add id to button in div
-$('button').attr("id", "preeti")
+// // on click, new div appears 
+// $('li').on('click',)
 
-// make something appear when button is clicked
-$(document).ready(function () {
-    $('#1').on('click', function () {
-        var newButton = '<p>hehehe</p>';
-        $('.main').append(newButton)
-    });
-})
+// // add id to button in div
+// $('button').attr("id", "preeti")
+
+// // make something appear when button is clicked
+// $(document).ready(function () {
+//     $('#1').on('click', function () {
+//         var newButton = '<p>hehehe</p>';
+//         $('.main').append(newButton)
+//     });
+// })
 
 
 
