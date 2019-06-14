@@ -28,7 +28,7 @@ $(document).ready(function () {
 // Adding id to li 
 $(document).ready(function() {
     $("ul li").each(function (i) {
-        $(this).attr("id", i);
+        $(this).attr("id", i+1 );
     });
 })
 
