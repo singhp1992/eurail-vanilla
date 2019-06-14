@@ -11,8 +11,8 @@ header {
 
 .cards {
     height: 300px;
-    width: 75%;
-    margin: auto;
+    width: fit-content;
+    margin: 1em auto;
     background-color: plum;
 }
 
