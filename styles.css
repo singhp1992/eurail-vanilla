@@ -12,11 +12,6 @@ ul {
     flex-direction: column;
 }
 
-.alphabet {
-    width: 75%;
-    margin: 1em auto;
-}
-
 ul.tabs {
     margin:0px; 
     padding:0px;
