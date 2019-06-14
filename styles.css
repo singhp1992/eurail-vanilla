@@ -12,14 +12,10 @@ ul {
     flex-direction: column;
 }
 
-.tabbed_area {
-    border:1px solid #000000;
-    background-color:#a8a8a8;
-    padding:8px;    
-}
-
 ul.tabs {
-    margin:0px; padding:0px;
+    margin:0px; 
+    padding:0px;
+    text-align: center;
 }
 ul.tabs li {
     list-style:none;
@@ -35,6 +31,7 @@ ul.tabs li a {
     font-weight:bold;
     border:1px solid #000000; 
 }
+
 ul.tabs li a:hover {
     background-color:black;
     border-color:#000000;
