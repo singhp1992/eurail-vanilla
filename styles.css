@@ -39,6 +39,7 @@ nav.tabs li a:hover {
     border-color:#000000;
     cursor: pointer;
 }
+
 nav.tabs li a.active {
     background-color:#ffffff;
     color: rgb(0, 0, 0);
@@ -84,14 +85,4 @@ nav.tabs li a.active {
     position:relative;
     left:4px;
     top:0px;
-} */
-
-/* added div */
-
-/* .names {
-  height: 300px;
-  width: 74.5%;
-  margin: 8px auto;
-  background-color: powderblue;
-    border:1px solid #000000; 
 } */
