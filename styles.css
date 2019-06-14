@@ -16,6 +16,12 @@ header {
     background-color: plum;
 }
 
+/* A */
+
+#a {
+    list-style: none;
+}
+
 /* tabs */
 
 nav.tabs li {
