@@ -19,9 +19,22 @@ header {
 /* A */
 
 #a {
+    width: 100%;
+    margin: 1px auto;
+}
+
+#a {
     list-style: none;
     text-align: left;
-    
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: column;;
+}
+
+#a li {
+    padding: 10px;
+    height: inherit;
+    flex-direction: column;
 }
 
 /* tabs */

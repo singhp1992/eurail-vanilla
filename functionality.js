@@ -66,8 +66,7 @@ $('ul').attr('id', 'a')
 // adding multiple lis to it
 $(document).ready(function () {
     var listItems = {'Anderson': 'Simon', 'Ames': 'Miranda', 'Adams':'John', 'Abela':'Jacque', 
-    'Abrahamson': 'Nicole', 'Abrew': 'Dawson', 'Adolfo': 'Kelsey', 'Agostini':'Irene', 
-    'Aiello': 'Jack','Andreas':'Fred' }
+    'Abrahamson': 'Nicole' }
     $.each(listItems, function (key, value) {
         $("#a").append('<li>' + '<a>' + key + ', ' +  value + '</a>' + '</li>');
     });
