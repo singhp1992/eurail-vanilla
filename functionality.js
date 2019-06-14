@@ -9,6 +9,8 @@ var configJson = {
     "u","v","w","x","y","z"]
 }
 
+console.log(configJson.title)
+
 
 $(document).ready(function () {
     var tabs = { "1": "a", "2": "b", "3": "c", "4": "d", "5": "e", "6": "f",
@@ -33,25 +35,26 @@ fetch('https://api.randomuser.me/')
     .then(response => response.json())
     .then(data => {
         console.log(data) // Prints result from `response.json()` in getRequest
+        
     })
     .catch(error => console.error(error))
 
-// // Creating another div
-// const $div = $('<button>more info here</button>');
+// Creating another div
+const $div = $('<button>more info here</button>');
 
-// // Adding another div to the section
-// $('.main').append($div)
+// Adding another div to the section
+$('.main').append($div)
 
-// // add a class name to the div
-// $('div').addClass('content')
+// add a class name to the div
+$('div').addClass('content')
 
-// // on click, new div appears 
-// $('li').on('click',)
+// on click, new div appears 
+$('li').on('click',)
 
-// // add id to button in div
-// $('button').attr("id", "preeti")
+// add id to button in div
+$('button').attr("id", "preeti")
 
-// // make something appear when button is clicked
+// make something appear when button is clicked
 // $(document).ready(function () {
 //     $('#1').on('click', function () {
 //         var newButton = '<p>hehehe</p>';
