@@ -42,19 +42,21 @@ $('.container').append($div)
 $('div').addClass('content')
 
 // adding a ul to the div
-const $ul = $('<ul>1</ul>')
-
-// adding ID to the UL 
-
+const $ul = $('<ul> </ul>')
 
 // appending into the div
 $('.content').append($ul)
+
+// adding ID to the UL 
+$('ul').attr('id', 'a')
+
+// adding li to ul unique
 
 // adding multiple lis to it
 $(document).ready(function () {
     var listItems = {'preeti': 'simon'}
     $.each(listItems, function (key, value) {
-        $(".content").append('<li>' + '<a>' + value + '</a>' + '</li>');
+        $("#a").append('<li>' + '<a>' + key + ' , ' +  value + '</a>' + '</li>');
     });
 });
 
