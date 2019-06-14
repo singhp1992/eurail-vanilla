@@ -12,9 +12,9 @@ ul {
     flex-direction: column;
 }
 
-section {
+.alphabet {
+    width: 75%;
     margin: 1em auto;
-    text-align: center;
 }
 
 ul.tabs {
@@ -93,7 +93,7 @@ ul.tabs {
 
 .names {
   height: 300px;
-  width: 75%;
+  width: 74.5%;
   margin: 8px auto;
   background-color: powderblue;
     border:1px solid #000000; 
