@@ -18,10 +18,10 @@ header {
 
 /* A */
 
-#a {
+/* #a {
     width: 100%;
     margin: 1px auto;
-}
+} */
 
 #a {
     list-style: none;
@@ -29,6 +29,9 @@ header {
     padding: 10px;
     display: inline-flex;
     flex-direction: column;;
+    width: 100%;
+    height: inherit;
+    margin: 1px auto;
 }
 
 #a li {
