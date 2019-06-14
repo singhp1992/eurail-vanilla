@@ -33,7 +33,7 @@ $(document).ready(function() {
 })
 
 // Creating another div below the tabs
-const $div = $('<div>more info here</div>');
+const $div = $('<div>Last Names Start with A</div>');
 
 // Appending div into the container
 $('.container').append($div)
@@ -44,8 +44,19 @@ $('div').addClass('content')
 // adding a ul to the div
 const $ul = $('<ul>1</ul>')
 
+// adding ID to the UL 
+
+
 // appending into the div
 $('.content').append($ul)
+
+// adding multiple lis to it
+$(document).ready(function () {
+    var listItems = {'preeti': 'simon'}
+    $.each(listItems, function (key, value) {
+        $(".content").append('<li>' + '<a>' + value + '</a>' + '</li>');
+    });
+});
 
 // Event handlers
 // on click, new div appears 
