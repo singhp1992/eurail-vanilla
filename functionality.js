@@ -62,6 +62,13 @@ $(document).ready(function () {
     });
 });
 
+// Adding IDs to each li tag in the a name
+$(document).ready(function () {
+    $("div li").each(function (i) {
+        $(this).attr("id", i + 1);
+    });
+})
+
 // Event handlers
 // on click, new div appears 
 $('li').on('click',)
