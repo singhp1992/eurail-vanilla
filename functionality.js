@@ -29,7 +29,7 @@ $(document).ready(function() {
 })
 
 // Creating another div
-const $div = $('<div>more info here</div>');
+const $div = $('<button>more info here</button>');
 
 // Adding another div to the section
 $('.main').append($div)
@@ -37,6 +37,19 @@ $('.main').append($div)
 // add a class name to the div
 $('div').addClass('content')
 
+// on click, new div appears 
+$('li').on('click',)
+
+// add id to button in div
+$('button').attr("id", "preeti")
+
+// make something appear when button is clicked
+$(document).ready(function () {
+    $('#1').on('click', function () {
+        var newButton = '<p>hehehe</p>';
+        $('.main').append(newButton)
+    });
+})
 
 
 
