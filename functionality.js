@@ -22,6 +22,3 @@ $(document).ready(function () {
 });
 
 // Adding elements to li 
-// $(document).ready(function () {
-//     $("li").addClass('tabs');
-// });
