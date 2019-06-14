@@ -17,6 +17,6 @@ $(document).ready(function () {
         "23": "w", "24": "x", "25": "y", "26": "z"
 };
     $.each(supercarObject, function (key, value) {
-        $("#result").append(value + ' ');
+        $("#result").append('<li>' + value + '</li>');
     });
 });
