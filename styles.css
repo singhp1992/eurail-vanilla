@@ -39,7 +39,6 @@ header {
     width: 45%;
     height: inherit;
     flex-direction: column;
-    /* flex-wrap: wrap */
 }
 
 /* tabs */
