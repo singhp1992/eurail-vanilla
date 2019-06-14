@@ -28,6 +28,14 @@ $(document).ready(function() {
     });
 })
 
+// API FETCH
+fetch('https://api.randomuser.me/')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data) // Prints result from `response.json()` in getRequest
+    })
+    .catch(error => console.error(error))
+
 // // Creating another div
 // const $div = $('<button>more info here</button>');
 
