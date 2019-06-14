@@ -20,3 +20,8 @@ $(document).ready(function () {
         $("#result").append('<li>' + '<a>' + value + '</a>' + '</li>');
     });
 });
+
+// Adding elements to li 
+// $(document).ready(function () {
+//     $("li").addClass('tabs');
+// });
