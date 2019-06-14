@@ -19,10 +19,6 @@ $(document).ready(function () {
     $.each(tabs, function (key, value) {
         $("#result").append('<li>' + '<a>' + value + '</a>' + '</li>');
     });
-    // $.each(tabs, function (key, value) {
-    //     $("li").attr('id', key);
-    //     console.log(key)
-    // });
 });
 
 // Adding id to li 
@@ -31,4 +27,16 @@ $(document).ready(function() {
         $(this).attr("id", i+1 );
     });
 })
+
+// Creating another div
+const $div = $('<div>more info here</div>');
+
+// Adding another div to the section
+$('.main').append($div)
+
+
+
+
+
+
 
