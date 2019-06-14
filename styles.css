@@ -12,6 +12,11 @@ ul {
     flex-direction: column;
 }
 
+section {
+    margin: 1em auto;
+    text-align: center;
+}
+
 ul.tabs {
     margin:0px; 
     padding:0px;
@@ -46,9 +51,10 @@ ul.tabs li a.active {
 .content {
     background-color:#ffffff;
     padding: 5px;
-    border:1px solid #464c54;   
+    border:1px solid #464c54; 
+    height: 75%;  
 }
-#content_2, #content_3 { display:none; }
+/* #content_2, #content_3 { display:none; } */
 
 ul.tabs {
     margin:0px; padding:0px;
