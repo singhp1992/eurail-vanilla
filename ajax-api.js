@@ -23,9 +23,9 @@
 
 
 // }); 
-$(window).load(function () {
+$('#result').click(function() {
     $.ajax({
-        url: 'https://randomuser.me/api/?results=10&name="a"',
+        url: 'https://randomuser.me/api/',
         dataType: 'json',
         success: function (data) {
             $("#a li").text(data.results[0].name.first + ', ' + data.results[0].name.last);
