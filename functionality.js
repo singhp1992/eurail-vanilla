@@ -81,26 +81,30 @@ $(document).ready(function () {
 })
 
 // MY FUNCTION ON EACH TAB
-$(document).ready(function () {
-    $("nav li").each(function (i) {
-        $(this).attr("onclick", 'my' + i + 'Function()');
-    });
-})
+// $(document).ready(function () {
+//     $("nav li").each(function (i) {
+//         $(this).attr("onclick", 'my' + i + 'Function()');
+//     });
+// })
 
 // adding A interactivity
-function my0Function(id) {
-    var x = document.getElementById('a');
-    x.style.display = "inline-flex";
-}
+// function my0Function(id) {
+//     var x = document.getElementById('a');
+//     x.style.display = "inline-flex";
+// }
+
+// adding selected class to first tab
+$(window).load(function () {
+    $('nav li:first').addClass("selected");
+});
 
 
-
-
-// make something appear when button is clicked
+// selecting tab 
 // $(document).ready(function () {
-//     $('#1').on('click', function () {
-//         var newButton = '<p>hehehe</p>';
-//         $('.main').append(newButton)
+//     $("nav li:first").click(function (e) {
+//         e.preventDefault();
+//         $("nav li:first").removeClass("selected");
+//         $('nav li:first').addClass("selected");
 //     });
 // })
 
