@@ -19,12 +19,14 @@ header {
     text-align: left;
     padding: 10px;
     display: inline-flex;
-    width: fit-content;
+    /* width: fit-content; */
+    width: 95%;
     height: inherit;
     margin: 1px auto;
     flex-direction: row;
     flex-wrap: wrap;
     display: none;
+    text-transform: capitalize
 }
 
 #a li {
