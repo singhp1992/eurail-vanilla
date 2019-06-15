@@ -18,23 +18,31 @@ header {
 
 /* A */
 
-#a {
+/* #a {
     width: 100%;
     margin: 1px auto;
-}
+} */
 
 #a {
     list-style: none;
     text-align: left;
     padding: 10px;
     display: inline-flex;
-    flex-direction: column;;
+    width: 100%;
+    height: inherit;
+    margin: 1px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #a li {
     padding: 10px;
-    height: inherit;
+    width: 45%;
     flex-direction: column;
+}
+
+#a li a {
+    flex-wrap: wrap
 }
 
 /* tabs */
