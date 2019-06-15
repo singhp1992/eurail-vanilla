@@ -80,12 +80,25 @@ $(document).ready(function () {
     });
 })
 
-// Event handlers
-// on click, new div appears 
-$('li').on('click',)
+// MY FUNCTION ON EACH TAB
+$(document).ready(function () {
+    $("nav li").each(function (i) {
+        $(this).attr("id", 'myFunction' + i +'()');
+    });
+})
 
-// add id to button in div
-$('button').attr("id", "preeti")
+// adding A interactivity
+function myFunction() {
+    var x = document.getElementById("a");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+
+
 
 // make something appear when button is clicked
 // $(document).ready(function () {
