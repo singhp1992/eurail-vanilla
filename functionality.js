@@ -88,8 +88,8 @@ $(document).ready(function () {
 })
 
 // adding A interactivity
-function my0Function() {
-    var x = document.getElementById("alpha");
+function my0Function(id) {
+    var x = document.getElementById('a');
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {

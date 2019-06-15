@@ -24,6 +24,7 @@ header {
     margin: 1px auto;
     flex-direction: row;
     flex-wrap: wrap;
+    display: none;
 }
 
 #a li {
