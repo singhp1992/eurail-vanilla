@@ -52,13 +52,13 @@ $('.container').append($div)
 $('div').addClass('content')
 
 // adding a ul to the div
-const $ul = $('<ul> </ul>')
+// const $ul = $('<ul> </ul>')
 
 // appending into the div
-$('.content').append($ul)
+// $('.content').append($ul)
 
 // adding ID to the UL 
-$('ul').attr('id', 'a')
+// $('ul').attr('id', 'a')
 
 //adding uls of each alphabet
 // $(document).ready(function () {
@@ -74,51 +74,39 @@ $('ul').attr('id', 'a')
 // });
 
 // adding multiple lis to the ul
-$(document).ready(function () {
-    var listItems = {'Anderson': 'Simon', 'Ames': 'Miranda', 'Adams':'John', 'Abela':'Jacque', 
-        'Abrahamson': 'Nicole', 'Anguillo': 'Buster', 'Arms': 'Griffin', 'Axel': 'Connie', 'Aon': 'Cosmo',
-        'Amily': 'Nancy' }
-    $.each(listItems, function (key, value) {
-        $("#a").append('<li>' + '<a>' + key + ', ' +  value + '</a>' + '</li>');
-    });
-});
+// $(document).ready(function () {
+//     var listItems = {'Anderson': 'Simon', 'Ames': 'Miranda', 'Adams':'John', 'Abela':'Jacque', 
+//         'Abrahamson': 'Nicole', 'Anguillo': 'Buster', 'Arms': 'Griffin', 'Axel': 'Connie', 'Aon': 'Cosmo',
+//         'Amily': 'Nancy' }
+//     $.each(listItems, function (key, value) {
+//         $("#a").append('<li>' + '<a>' + key + ', ' +  value + '</a>' + '</li>');
+//     });
+// });
 
 // Adding IDs to each li tag in the a name
-$(document).ready(function () {
-    $("div li").each(function (i) {
-        $(this).attr("id", i + 1);
-    });
-})
+// $(document).ready(function () {
+//     $("div li").each(function (i) {
+//         $(this).attr("id", i + 1);
+//     });
+// })
 
 // MY FUNCTION ON EACH TAB
-$(document).ready(function () {
-    $("nav li").each(function (i) {
-        $(this).attr("onclick", 'my' + i + 'Function()');
-    });
-})
+// $(document).ready(function () {
+//     $("nav li").each(function (i) {
+//         $(this).attr("onclick", 'my' + i + 'Function()');
+//     });
+// })
 
 // adding A interactivity
-$(window).load(function (id) {
-    var x = document.getElementById('a');
-    x.style.display = "inline-flex";
-});
+// $(window).load(function (id) {
+//     var x = document.getElementById('a');
+//     x.style.display = "inline-flex";
+// });
 
 // making a disapper when b is clicked
 // $(document).ready(function () {
 //     $('#2').on('click', function () {
 //         $('#a').hide();
-//     });
-// });
-
-// FROM TTH JSFIDDLE
-// $(document).ready(function () {
-//     $("nav li").on('click', function (e) {
-//         e.preventDefault()
-//         var page = $(this).data('page');
-//         $("#pages .page:not('.hide')").stop().fadeOut('fast', function () {
-//             $(this).addClass('hide');
-//             $('#pages .page[data-page="' + page + '"]').fadeIn('slow').removeClass('hide');
-//         });
 //     });
 // });
 
