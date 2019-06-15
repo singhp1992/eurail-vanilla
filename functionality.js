@@ -52,7 +52,9 @@ $('.container').append($div)
 $('div').addClass('content')
 
 // adding a ul to the div
-const $ul = $('<ul> <li class="preeti"> </li> </ul>')
+const $ul = $('<ul> </ul>')
+
+   // < li class="preeti" > </li >
 
 // appending into the div
 $('.content').append($ul)
@@ -98,10 +100,10 @@ $('ul').attr('id', 'a')
 // })
 
 // adding A interactivity
-// $(window).load(function (id) {
-//     var x = document.getElementById('a');
-//     x.style.display = "inline-flex";
-// });
+$(window).load(function (id) {
+    var x = document.getElementById('a');
+    x.style.display = "inline-flex";
+});
 
 // making a disapper when b is clicked
 // $(document).ready(function () {

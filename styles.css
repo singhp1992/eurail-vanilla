@@ -73,9 +73,9 @@ nav.tabs li:hover {
     cursor: pointer;
 }
 
-.hide {
+/* .hide {
     display: none;
-}
+} */
 
 .content {
     background-color:#ffffff;
