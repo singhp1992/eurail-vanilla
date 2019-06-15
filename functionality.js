@@ -32,6 +32,16 @@ $(document).ready(function() {
     });
 })
 
+// adding ACTIVE class to first tab
+$(window).load(function () {
+    $('nav li:first').addClass("active");
+});
+
+// ACTIVE class changing 
+$(document).on('click', 'nav li', function () {
+    $(this).addClass('active').siblings().removeAttr('class', 'active')
+})
+
 // Creating another div below the tabs
 const $div = $('<div> </div>');
 
@@ -42,7 +52,9 @@ $('.container').append($div)
 $('div').addClass('content')
 
 // adding a ul to the div
-const $ul = $('<ul> </ul>')
+const $ul = $('<ul> <li> </li> </ul>')
+
+   // < li class="preeti" > </li >
 
 // appending into the div
 $('.content').append($ul)
@@ -63,47 +75,63 @@ $('ul').attr('id', 'a')
 //     });
 // });
 
-// adding multiple lis to it
-$(document).ready(function () {
-    var listItems = {'Anderson': 'Simon', 'Ames': 'Miranda', 'Adams':'John', 'Abela':'Jacque', 
-        'Abrahamson': 'Nicole', 'Anguillo': 'Buster', 'Arms': 'Griffin', 'Axel': 'Connie', 'Aon': 'Cosmo',
-        'Amily': 'Nancy' }
-    $.each(listItems, function (key, value) {
-        $("#a").append('<li>' + '<a>' + key + ', ' +  value + '</a>' + '</li>');
-    });
-});
+// adding multiple lis to the ul
+// $(document).ready(function () {
+//     var listItems = {'Anderson': 'Simon', 'Ames': 'Miranda', 'Adams':'John', 'Abela':'Jacque', 
+//         'Abrahamson': 'Nicole', 'Anguillo': 'Buster', 'Arms': 'Griffin', 'Axel': 'Connie', 'Aon': 'Cosmo',
+//         'Amily': 'Nancy' }
+//     $.each(listItems, function (key, value) {
+//         $("#a").append('<li>' + '<a>' + key + ', ' +  value + '</a>' + '</li>');
+//     });
+// });
 
 // Adding IDs to each li tag in the a name
-$(document).ready(function () {
-    $("div li").each(function (i) {
-        $(this).attr("id", i + 1);
-    });
-})
+// $(document).ready(function () {
+//     $("div li").each(function (i) {
+//         $(this).attr("id", i + 1);
+//     });
+// })
 
 // MY FUNCTION ON EACH TAB
-$(document).ready(function () {
-    $("nav li").each(function (i) {
-        $(this).attr("onclick", 'my' + i + 'Function()');
-    });
-})
+// $(document).ready(function () {
+//     $("nav li").each(function (i) {
+//         $(this).attr("onclick", 'my' + i + 'Function()');
+//     });
+// })
 
 // adding A interactivity
-function my0Function(id) {
+$(window).load(function (id) {
     var x = document.getElementById('a');
     x.style.display = "inline-flex";
-}
-
-// adding selected class to first tab
-$(window).load(function () {
-    $('nav li:first').addClass("active");
 });
 
-// selecting tab 
-$(document).on('click', 'nav li', function() {
-    $(this).addClass('active').siblings().removeAttr('class','active')
-})
+// making a disapper when b is clicked
+// $(document).ready(function () {
+//     $('#2').on('click', function () {
+//         $('#a').hide();
+//     });
+// });
 
 
+//below, not sure how to fix it YET
+
+// $(document).on('click', 'nav li', function () {
+//     $(this).each(function (index) {
+//         if ($(index).is('#5')) {
+//             var x = document.getElementById('a');
+//             x.style.display = "inline-flex";
+//         }
+//         else {
+//             var x = document.getElementById('a');
+//             x.style.display = "none";
+//         }
+//     });
+// })
+
+// function my0Function(id) {
+//     var x = document.getElementById('a');
+//     x.style.display = "inline-flex";
+// }
 
 // api fetch
 fetch('https://api.randomuser.me/')
@@ -114,6 +142,8 @@ fetch('https://api.randomuser.me/')
     })
     .catch(error => console.error(error))
 
+
+    
 
 
 

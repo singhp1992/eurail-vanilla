@@ -9,22 +9,24 @@ header {
     height: 300px;
     width: fit-content;
     margin: 1em auto;
-    background-color: lightgray;
+    /* background-color: lightgray; */
 }
 
-/* A */
+/* CARD: the names starting with a */
 
 #a {
     list-style: none;
     text-align: left;
     padding: 10px;
     display: inline-flex;
-    width: fit-content;
+    /* width: fit-content; */
+    width: 95%;
     height: inherit;
     margin: 1px auto;
     flex-direction: row;
     flex-wrap: wrap;
     display: none;
+    text-transform: capitalize
 }
 
 #a li {
@@ -56,28 +58,25 @@ nav.tabs li {
     font-size:18px;
     font-weight:bold;
     border:1px solid #000000; 
+    border-top-left-radius: 5pt 5pt;
+    border-top-right-radius: 5pt 5pt;
 }
 
 nav.tabs li:hover {
     background-color:rgb(255, 255, 255);
     color: black;
-    border-color:#000000;
     cursor: pointer;
 }
 
 .tabs li.active {
     background-color:rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    /* border-color:#000000; */
     border-bottom-color: #FFF;
     cursor: pointer;
 }
-/* 
-nav li.active {
-    background-color:#ffffff;
-    color: rgb(0, 0, 0);
-    border:1px solid #000000; 
-    border-bottom: 1px solid #ffffff;
+
+/* .hide {
+    display: none;
 } */
 
 .content {
