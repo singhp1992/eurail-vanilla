@@ -123,10 +123,6 @@ $(window).load(function (id) {
 //     x.style.display = "inline-flex";
 // }
 
-
-
-
-
 // api fetch
 fetch('https://api.randomuser.me/')
     .then(response => response.json())
