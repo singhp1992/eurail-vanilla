@@ -73,13 +73,6 @@ nav.tabs li:hover {
     border-bottom-color: #FFF;
     cursor: pointer;
 }
-/* 
-nav li.active {
-    background-color:#ffffff;
-    color: rgb(0, 0, 0);
-    border:1px solid #000000; 
-    border-bottom: 1px solid #ffffff;
-} */
 
 .content {
     background-color:#ffffff;
