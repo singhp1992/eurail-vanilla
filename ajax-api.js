@@ -28,8 +28,7 @@ $.ajax({
     url: 'https://randomuser.me/api/',
     dataType: 'json',
     success: function (data) {
-        $("#a li").text(data.results[0].gender);
-        $("#a li").text(data.results[0].name.last);
+        $("#a li").text(data.results[0].name.first);
     }
 });
 
