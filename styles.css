@@ -63,7 +63,6 @@ nav.tabs li {
 nav.tabs li:hover {
     background-color:rgb(255, 255, 255);
     color: black;
-    /* border-color:#000000; */
     cursor: pointer;
 }
 
