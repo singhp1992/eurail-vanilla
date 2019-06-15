@@ -33,7 +33,7 @@ $(document).ready(function() {
 })
 
 // Creating another div below the tabs
-const $div = $('<div>Last Names Start with A</div>');
+const $div = $('<div> </div>');
 
 // Appending div into the container
 $('.container').append($div)
