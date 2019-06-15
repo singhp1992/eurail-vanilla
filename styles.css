@@ -2,15 +2,12 @@ header {
   text-align: center;
   margin: 1em auto;
 }
-/* .flex {
-    display: inline-flex;
-    flex-direction: column;
-} */
 
 /* cards */
 
 .container {
     height: 300px;
+    /* width: 74.5%; */
     width: fit-content;
     margin: 1em auto;
     background-color: lightgray;
@@ -18,17 +15,12 @@ header {
 
 /* A */
 
-/* #a {
-    width: 100%;
-    margin: 1px auto;
-} */
-
 #a {
     list-style: none;
     text-align: left;
     padding: 10px;
     display: inline-flex;
-    width: 100%;
+    width: fit-content;
     height: inherit;
     margin: 1px auto;
     flex-direction: row;
@@ -36,10 +28,10 @@ header {
 }
 
 #a li {
-    padding: 5px;
+    padding-bottom: 5px;
+    padding-bottom: 15px;
     width: 45%;
-    flex-direction: column;
-    
+    /* flex-direction: row; */
 }
 
 #a li:after {
@@ -84,7 +76,7 @@ nav.tabs li a.active {
 .content {
     background-color:#ffffff;
     /* padding: 10px; */
-    /* border:1px solid #464c54;  */
+    border:1px solid #464c54; 
     height: 75%;  
     text-align: center;
 } 
