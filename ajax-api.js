@@ -23,14 +23,16 @@
 
 
 // }); 
-
-$.ajax({
-    url: 'https://randomuser.me/api/',
-    dataType: 'json',
-    success: function (data) {
-        $("#a li").text(data.results[0].name.first + ', ' + data.results[0].name.last);
-}
+$(window).load(function () {
+    $.ajax({
+        url: 'https://randomuser.me/api/?results=10&name="a"',
+        dataType: 'json',
+        success: function (data) {
+            $("#a li").text(data.results[0].name.first + ', ' + data.results[0].name.last);
+            console.log(data)
+        },
 });
+}); 
 
 //function displayNames(data) {
 //             var letterHTML = '<ul>';
