@@ -32,6 +32,16 @@ $(document).ready(function() {
     });
 })
 
+// adding ACTIVE class to first tab
+$(window).load(function () {
+    $('nav li:first').addClass("active");
+});
+
+// ACTIVE class changing 
+$(document).on('click', 'nav li', function () {
+    $(this).addClass('active').siblings().removeAttr('class', 'active')
+})
+
 // Creating another div below the tabs
 const $div = $('<div> </div>');
 
@@ -63,7 +73,7 @@ $('ul').attr('id', 'a')
 //     });
 // });
 
-// adding multiple lis to it
+// adding multiple lis to the ul
 $(document).ready(function () {
     var listItems = {'Anderson': 'Simon', 'Ames': 'Miranda', 'Adams':'John', 'Abela':'Jacque', 
         'Abrahamson': 'Nicole', 'Anguillo': 'Buster', 'Arms': 'Griffin', 'Axel': 'Connie', 'Aon': 'Cosmo',
@@ -88,20 +98,32 @@ $(document).ready(function () {
 })
 
 // adding A interactivity
-function my0Function(id) {
+$(window).load(function (id) {
     var x = document.getElementById('a');
     x.style.display = "inline-flex";
-}
-
-// adding selected class to first tab
-$(window).load(function () {
-    $('nav li:first').addClass("active");
 });
 
-// selecting tab 
-$(document).on('click', 'nav li', function() {
-    $(this).addClass('active').siblings().removeAttr('class','active')
-})
+//below, not sure how to fix it YET
+
+// $(document).on('click', 'nav li', function () {
+//     $(this).each(function (index) {
+//         if ($(index).is('#5')) {
+//             var x = document.getElementById('a');
+//             x.style.display = "inline-flex";
+//         }
+//         else {
+//             var x = document.getElementById('a');
+//             x.style.display = "none";
+//         }
+//     });
+// })
+
+// function my0Function(id) {
+//     var x = document.getElementById('a');
+//     x.style.display = "inline-flex";
+// }
+
+
 
 
 
