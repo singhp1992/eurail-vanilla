@@ -48,7 +48,7 @@ nav.tabs li {
     display:inline-flex;
 }
 
-nav.tabs li a {
+nav.tabs li {
     background-color:#a8a8a8;
     color: white;
     padding:8px 14px 6px 14px;
@@ -58,14 +58,14 @@ nav.tabs li a {
     border:1px solid #000000; 
 }
 
-nav.tabs li a:hover {
+nav.tabs li:hover {
     background-color:rgb(255, 255, 255);
     color: black;
     border-color:#000000;
     cursor: pointer;
 }
 
-.tabs li a.active {
+.tabs li.active {
     background-color:rgb(255, 255, 255);
     color: rgb(250, 2, 2);
     border-color:#000000;

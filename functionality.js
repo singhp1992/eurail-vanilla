@@ -21,7 +21,7 @@ $(document).ready(function () {
         "23": "w", "24": "x", "25": "y", "26": "z"
     };
     $.each(tabs, function (key, value) {
-        $("#result").append('<li>' + '<a>' + value + '</a>' + '</li>');
+        $("#result").append('<li>' + value + '</li>');
     });
 });
 
@@ -95,11 +95,11 @@ function my0Function(id) {
 
 // adding selected class to first tab
 $(window).load(function () {
-    $('nav li a:first').addClass("active");
+    $('nav li:first').addClass("active");
 });
 
 // selecting tab 
-$(document).on('click', 'nav li a', function() {
+$(document).on('click', 'nav li', function() {
     $(this).addClass('active').siblings().removeAttr('class','active')
 })
 
