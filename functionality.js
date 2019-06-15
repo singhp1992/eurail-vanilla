@@ -90,11 +90,7 @@ $(document).ready(function () {
 // adding A interactivity
 function my0Function(id) {
     var x = document.getElementById('a');
-    if (x.style.display === "none") {
-        x.style.display = "inline-flex";
-    } else {
-        x.style.display = "none";
-    }
+    x.style.display = "inline-flex";
 }
 
 
