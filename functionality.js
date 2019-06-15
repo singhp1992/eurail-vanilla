@@ -83,7 +83,7 @@ $(document).ready(function () {
 // MY FUNCTION ON EACH TAB
 $(document).ready(function () {
     $("nav li").each(function (i) {
-        $(this).attr("id", 'myFunction' + i +'()');
+        $(this).attr("onclick", 'myFunction' + i +'()');
     });
 })
 
