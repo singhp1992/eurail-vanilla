@@ -102,6 +102,18 @@ $(window).load(function (id) {
     var x = document.getElementById('a');
     x.style.display = "inline-flex";
 });
+// 
+$(document).ready(function () {
+    $("nav li").on('click', function (e) {
+        e.preventDefault()
+        var page = $(this).data('page');
+        $("#pages .page:not('.hide')").stop().fadeOut('fast', function () {
+            $(this).addClass('hide');
+            $('#pages .page[data-page="' + page + '"]').fadeIn('slow').removeClass('hide');
+        });
+    });
+});
+
 
 //below, not sure how to fix it YET
 
@@ -132,6 +144,8 @@ fetch('https://api.randomuser.me/')
     })
     .catch(error => console.error(error))
 
+
+    
 
 
 

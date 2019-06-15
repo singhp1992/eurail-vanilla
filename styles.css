@@ -73,6 +73,10 @@ nav.tabs li:hover {
     cursor: pointer;
 }
 
+.hide {
+    display: none;
+}
+
 .content {
     background-color:#ffffff;
     border:1px solid #464c54;
