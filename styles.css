@@ -7,7 +7,6 @@ header {
 
 .container {
     height: 300px;
-    /* width: 74.5%; */
     width: fit-content;
     margin: 1em auto;
     background-color: lightgray;
@@ -31,7 +30,6 @@ header {
     padding-bottom: 10px;
     padding-top: 5px;
     width: 45%;
-    /* flex-direction: row; */
 }
 
 #a li:after {
@@ -75,7 +73,6 @@ nav.tabs li a.active {
 
 .content {
     background-color:#ffffff;
-    /* padding: 10px; */
     border:1px solid #464c54; 
     height: 75%;  
     text-align: center;
