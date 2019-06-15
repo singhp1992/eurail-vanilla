@@ -52,7 +52,7 @@ $('.container').append($div)
 $('div').addClass('content')
 
 // adding a ul to the div
-const $ul = $('<ul> </ul>')
+const $ul = $('<ul> <li> </li> </ul>')
 
    // < li class="preeti" > </li >
 
