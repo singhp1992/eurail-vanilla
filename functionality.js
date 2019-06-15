@@ -21,7 +21,7 @@ $(document).ready(function () {
         "23": "w", "24": "x", "25": "y", "26": "z"
     };
     $.each(tabs, function (key, value) {
-        $("#result").append('<li>' + '<a>' + value + '</a>' + '</li>');
+        $("#result").append('<li>' + value + '</li>');
     });
 });
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
 })
 
 // Creating another div below the tabs
-const $div = $('<div>Last Names Start with A</div>');
+const $div = $('<div> </div>');
 
 // Appending div into the container
 $('.container').append($div)
@@ -66,8 +66,8 @@ $('ul').attr('id', 'a')
 // adding multiple lis to it
 $(document).ready(function () {
     var listItems = {'Anderson': 'Simon', 'Ames': 'Miranda', 'Adams':'John', 'Abela':'Jacque', 
-        'Abrahamson': 'Nicole', 'a': 'b', 'a': 'b', 'a': 'c', 'e': 'j',
-        'a': 'n' }
+        'Abrahamson': 'Nicole', 'Anguillo': 'Buster', 'Arms': 'Griffin', 'Axel': 'Connie', 'Aon': 'Cosmo',
+        'Amily': 'Nancy' }
     $.each(listItems, function (key, value) {
         $("#a").append('<li>' + '<a>' + key + ', ' +  value + '</a>' + '</li>');
     });
@@ -80,20 +80,30 @@ $(document).ready(function () {
     });
 })
 
-// Event handlers
-// on click, new div appears 
-$('li').on('click',)
+// MY FUNCTION ON EACH TAB
+$(document).ready(function () {
+    $("nav li").each(function (i) {
+        $(this).attr("onclick", 'my' + i + 'Function()');
+    });
+})
 
-// add id to button in div
-$('button').attr("id", "preeti")
+// adding A interactivity
+function my0Function(id) {
+    var x = document.getElementById('a');
+    x.style.display = "inline-flex";
+}
 
-// make something appear when button is clicked
-// $(document).ready(function () {
-//     $('#1').on('click', function () {
-//         var newButton = '<p>hehehe</p>';
-//         $('.main').append(newButton)
-//     });
-// })
+// adding selected class to first tab
+$(window).load(function () {
+    $('nav li:first').addClass("active");
+});
+
+// selecting tab 
+$(document).on('click', 'nav li', function() {
+    $(this).addClass('active').siblings().removeAttr('class','active')
+})
+
+
 
 // api fetch
 fetch('https://api.randomuser.me/')

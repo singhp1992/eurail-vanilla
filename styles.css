@@ -2,10 +2,6 @@ header {
   text-align: center;
   margin: 1em auto;
 }
-/* .flex {
-    display: inline-flex;
-    flex-direction: column;
-} */
 
 /* cards */
 
@@ -13,36 +9,36 @@ header {
     height: 300px;
     width: fit-content;
     margin: 1em auto;
-    background-color: plum;
+    background-color: lightgray;
 }
 
 /* A */
-
-/* #a {
-    width: 100%;
-    margin: 1px auto;
-} */
 
 #a {
     list-style: none;
     text-align: left;
     padding: 10px;
     display: inline-flex;
-    width: 100%;
+    width: fit-content;
     height: inherit;
     margin: 1px auto;
     flex-direction: row;
     flex-wrap: wrap;
+    display: none;
 }
 
 #a li {
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
     width: 45%;
-    flex-direction: column;
 }
 
-#a li a {
-    flex-wrap: wrap
+#a li:after {
+    content: "";
+    display: block;
+    width: 85%; 
+    padding-top: 5px;
+    border-bottom: 1px solid grey; 
 }
 
 /* tabs */
@@ -52,7 +48,7 @@ nav.tabs li {
     display:inline-flex;
 }
 
-nav.tabs li a {
+nav.tabs li {
     background-color:#a8a8a8;
     color: white;
     padding:8px 14px 6px 14px;
@@ -62,24 +58,32 @@ nav.tabs li a {
     border:1px solid #000000; 
 }
 
-nav.tabs li a:hover {
+nav.tabs li:hover {
     background-color:rgb(255, 255, 255);
     color: black;
     border-color:#000000;
     cursor: pointer;
 }
 
-nav.tabs li a.active {
+.tabs li.active {
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /* border-color:#000000; */
+    border-bottom-color: #FFF;
+    cursor: pointer;
+}
+/* 
+nav li.active {
     background-color:#ffffff;
     color: rgb(0, 0, 0);
     border:1px solid #000000; 
     border-bottom: 1px solid #ffffff;
-}
+} */
 
 .content {
     background-color:#ffffff;
-    /* padding: 10px; */
-    /* border:1px solid #464c54;  */
+    border:1px solid #464c54;
+    border-top: none; 
     height: 75%;  
     text-align: center;
 } 
