@@ -28,8 +28,8 @@ header {
 }
 
 #a li {
-    padding-bottom: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
     width: 45%;
     /* flex-direction: row; */
 }
