@@ -9,7 +9,7 @@ header {
     height: 300px;
     width: fit-content;
     margin: 1em auto;
-    background-color: lightgray;
+    /* background-color: lightgray; */
 }
 
 /* CARD: the names starting with a */
