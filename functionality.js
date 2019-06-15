@@ -95,7 +95,7 @@ function my0Function(id) {
 
 // adding selected class to first tab
 $(window).load(function () {
-    $('nav li:first').addClass("active");
+    $('nav li a:first').addClass("active");
 });
 
 // selecting tab 
