@@ -28,6 +28,18 @@ $.ajax({
     url: 'https://randomuser.me/api/',
     dataType: 'json',
     success: function (data) {
-        console.log(data);
+        $(".preeti").text(data.results[0].gender);
+        $(".preeti").text(data.results[0].name.last);
     }
 });
+
+//function displayNames(data) {
+//             var letterHTML = '<ul>';
+//             $.each(data.items, function (i, photo) {
+//                 letterHTML += '<li id="a">';
+//                 letterHTML += name.first + ' ' + name.last;
+//             });
+//             letterHTML += '</ul>'
+//             $('.content').append(letterHTML);
+//             console.log(data)
+//         }

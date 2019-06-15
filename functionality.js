@@ -52,13 +52,13 @@ $('.container').append($div)
 $('div').addClass('content')
 
 // adding a ul to the div
-// const $ul = $('<ul> </ul>')
+const $ul = $('<ul> <li class="preeti"> </li> </ul>')
 
 // appending into the div
-// $('.content').append($ul)
+$('.content').append($ul)
 
 // adding ID to the UL 
-// $('ul').attr('id', 'a')
+$('ul').attr('id', 'a')
 
 //adding uls of each alphabet
 // $(document).ready(function () {
