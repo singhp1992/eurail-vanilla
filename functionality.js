@@ -83,13 +83,13 @@ $(document).ready(function () {
 // MY FUNCTION ON EACH TAB
 $(document).ready(function () {
     $("nav li").each(function (i) {
-        $(this).attr("onclick", 'myFunction' + i +'()');
+        $(this).attr("onclick", 'my' + i + 'Function()');
     });
 })
 
 // adding A interactivity
-function myFunction() {
-    var x = document.getElementById("a");
+function my0Function() {
+    var x = document.getElementById("alpha");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
