@@ -56,19 +56,20 @@ nav.tabs li {
     font-size:18px;
     font-weight:bold;
     border:1px solid #000000; 
+    border-top-left-radius: 5pt 5pt;
+    border-top-right-radius: 5pt 5pt;
 }
 
 nav.tabs li:hover {
     background-color:rgb(255, 255, 255);
     color: black;
-    border-color:#000000;
+    /* border-color:#000000; */
     cursor: pointer;
 }
 
 .tabs li.active {
     background-color:rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    /* border-color:#000000; */
     border-bottom-color: #FFF;
     cursor: pointer;
 }
