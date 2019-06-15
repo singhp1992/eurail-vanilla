@@ -81,17 +81,17 @@ $(document).ready(function () {
 })
 
 // MY FUNCTION ON EACH TAB
-// $(document).ready(function () {
-//     $("nav li").each(function (i) {
-//         $(this).attr("onclick", 'my' + i + 'Function()');
-//     });
-// })
+$(document).ready(function () {
+    $("nav li").each(function (i) {
+        $(this).attr("onclick", 'my' + i + 'Function()');
+    });
+})
 
 // adding A interactivity
-// function my0Function(id) {
-//     var x = document.getElementById('a');
-//     x.style.display = "inline-flex";
-// }
+function my0Function(id) {
+    var x = document.getElementById('a');
+    x.style.display = "inline-flex";
+}
 
 // adding selected class to first tab
 $(window).load(function () {
@@ -99,7 +99,7 @@ $(window).load(function () {
 });
 
 // selecting tab 
-$(document).on('click', 'nav li', function() {
+$(document).on('click', 'nav li a', function() {
     $(this).addClass('active').siblings().removeAttr('class','active')
 })
 
