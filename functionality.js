@@ -95,20 +95,12 @@ $(document).ready(function () {
 
 // adding selected class to first tab
 $(window).load(function () {
-    $('nav li:first').addClass("selected");
+    $('nav li:first').addClass("active");
 });
 
-
 // selecting tab 
-// $(document).ready(function () {
-//     $("nav li").click(function (e) {
-//         e.preventDefault();
-//         $("nav li:selected").removeClass("selected");
-//         $('nav li').addClass("selected");
-//     });
-// })
 $(document).on('click', 'nav li', function() {
-    $(this).addClass('selected').siblings().removeClass('selected')
+    $(this).addClass('active').siblings().removeAttr('class','active')
 })
 
 
