@@ -101,12 +101,17 @@ $(window).load(function () {
 
 // selecting tab 
 // $(document).ready(function () {
-//     $("nav li:first").click(function (e) {
+//     $("nav li").click(function (e) {
 //         e.preventDefault();
-//         $("nav li:first").removeClass("selected");
-//         $('nav li:first').addClass("selected");
+//         $("nav li:selected").removeClass("selected");
+//         $('nav li').addClass("selected");
 //     });
 // })
+$(document).on('click', 'nav li', function() {
+    $(this).addClass('selected').siblings().removeClass('selected')
+})
+
+
 
 // api fetch
 fetch('https://api.randomuser.me/')
