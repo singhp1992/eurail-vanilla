@@ -28,7 +28,7 @@
 
 $(window).load(function () {
     $.ajax({
-        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=100&nat=us,dk,fr,gb',
+        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=200&nat=us,dk,fr,gb',
         dataType: 'json',
         success: function (data) {
             $.each(data.results, function (i, order) {
@@ -44,28 +44,41 @@ $(window).load(function () {
                 else if ('d' === order.name.last[0]) {
                     $('#d').append('<li id="all-d">' + order.name.last + ', ' + order.name.first + '</li>');
                 }
+                else if ('e' === order.name.last[0]) {
+                    $('#e').append('<li id="all-e">' + order.name.last + ', ' + order.name.first + '</li>');
+                }
+                else if ('f' === order.name.last[0]) {
+                    $('#f').append('<li id="all-f">' + order.name.last + ', ' + order.name.first + '</li>');
+                }
+                else if ('g' === order.name.last[0]) {
+                    $('#g').append('<li id="all-g">' + order.name.last + ', ' + order.name.first + '</li>');
+                }
             });
-
-            // $(document).on('click', '.more-info', data.results, function (i, order) {
-            //     console.log(order.name.last);
-            // })
         },
     });
 }); 
 
+//hiding other elements when tabs are clicked
 $(document).on('click', '#1', function () {
     $('#a').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
-
 $(document).on('click', '#2', function () {
     $('#b').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
 $(document).on('click', '#3', function () {
     $('#c').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
-
 $(document).on('click', '#4', function () {
     $('#d').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+})
+$(document).on('click', '#5', function () {
+    $('#e').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+})
+$(document).on('click', '#6', function () {
+    $('#f').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+})
+$(document).on('click', '#7', function () {
+    $('#g').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
 
 
