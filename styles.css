@@ -75,9 +75,9 @@ nav.tabs li:hover {
     cursor: pointer;
 }
 
-/* .hide {
+.hide {
     display: none;
-} */
+}
 
 #a li:nth-of-type(1n+9) {
   display: none;
