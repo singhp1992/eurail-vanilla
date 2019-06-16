@@ -3,9 +3,9 @@ header {
   margin: 1em auto;
 }
 
-/* body {
+body {
     font-family: 'Open Sans', sans-serif;
-} */
+} 
 
 
 /* cards */
@@ -14,7 +14,6 @@ header {
     height: 300px;
     width: fit-content;
     margin: 1em auto;
-    /* background-color: lightgray; */
 }
 
 /* CARD: the names starting with a */
@@ -24,7 +23,6 @@ div ul {
     text-align: left;
     padding: 10px;
     display: flex;
-    /* width: fit-content; */
     width: 90%;
     height: inherit;
     margin: 1px auto;
