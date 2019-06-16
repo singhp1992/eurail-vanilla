@@ -23,21 +23,23 @@
 
 
 // }); 
-$('#result').click(function() {
+// $(document).on('click', "nav li.active", function() {
+
+$(window).load(function () {
+    var $a = $('#a')
     $.ajax({
-        url: 'https://randomuser.me/api/?results=6',
+        url: 'https://randomuser.me/api/?results=8',
         dataType: 'json',
         success: function (data) {
-            $("#a").append('<li>' + data.results[0].name.first + ', ' + data.results[0].name.last + '</li>');
-            $("#a").append('<li>' + data.results[1].name.first + ', ' + data.results[1].name.last + '</li>');
-            $("#a").append('<li>' + data.results[2].name.first + ', ' + data.results[2].name.last + '</li>');
-            $("#a").append('<li>' + data.results[3].name.first + ', ' + data.results[3].name.last + '</li>');
-            $("#a").append('<li>' + data.results[4].name.first + ', ' + data.results[4].name.last + '</li>');
-            $("#a").append('<li>' + data.results[5].name.first + ', ' + data.results[5].name.last + '</li>');
+            // $($a).append('<li>' + data.results[0].name.first + ', ' + data.results[0].name.last + '</li>');
+            // console.log(data)
+            console.log(data.results)
 
-            console.log(data)
+            $.each(data.results, function (i, order) {
+                $($a).append('<li> testing </li>');
+            });
         },
-});
+    });
 }); 
 
 //function displayNames(data) {

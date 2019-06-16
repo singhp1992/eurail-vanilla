@@ -1,15 +1,15 @@
 // Given information
 
-var configJson = {
-    "title": "Contact List", 
-    "uri":"https://api.randomuser.me/",
-    "numberCards": 120,
-    "tabs": ["a", "b", "c", "d", "e", "f", "g","h",
-    "i", "j", "k","l","m","n","o","p","q","r","s","t",
-    "u","v","w","x","y","z"]
-}
+// var configJson = {
+//     "title": "Contact List", 
+//     "uri":"https://api.randomuser.me/",
+//     "numberCards": 120,
+//     "tabs": ["a", "b", "c", "d", "e", "f", "g","h",
+//     "i", "j", "k","l","m","n","o","p","q","r","s","t",
+//     "u","v","w","x","y","z"]
+// }
 
-console.log(configJson.title)
+// console.log(configJson.title)
 
 // Dynamically creating structure
 
@@ -53,8 +53,6 @@ $('div').addClass('content')
 
 // adding a ul to the div
 const $ul = $('<ul>  </ul>')
-
-   // < li class="preeti" > </li >
 
 // appending into the div
 $('.content').append($ul)
