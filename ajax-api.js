@@ -1,7 +1,7 @@
 //API call when window loads
 $(window).load(function () {
     $.ajax({
-        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=300&nat=us,dk,fr,gb,es,nl,nz',
+        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=300&nat=us,dk,fr,gb,es,nz',
         dataType: 'json',
         success: function (data) {
             $.each(data.results, function (i, order) {
