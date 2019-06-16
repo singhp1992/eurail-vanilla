@@ -14,7 +14,7 @@ header {
 
 /* CARD: the names starting with a */
 
-#a {
+div ul {
     list-style: none;
     text-align: left;
     padding: 10px;
@@ -25,17 +25,17 @@ header {
     margin: 1px auto;
     flex-direction: row;
     flex-wrap: wrap;
-    display: none;
+    display: inline-flex;
     text-transform: capitalize
 }
 
-#a li {
+div ul li {
     padding-bottom: 10px;
     padding-top: 5px;
     width: 45%;
 }
 
-#a li:after {
+div ul li:after {
     content: "";
     display: block;
     width: 85%; 
@@ -75,9 +75,13 @@ nav.tabs li:hover {
     cursor: pointer;
 }
 
-/* .hide {
+.hide {
     display: none;
-} */
+}
+
+div ul li:nth-of-type(1n+9) {
+  display: none;
+}
 
 .content {
     background-color:#ffffff;
