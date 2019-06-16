@@ -29,7 +29,7 @@
 $(window).load(function () {
     var $a = $('#a')
     $.ajax({
-        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=100&nat=us,dk,fr,gb',
+        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=1000&nat=us,dk,fr,gb',
         dataType: 'json',
         success: function (data) {
             console.log(data.results)
@@ -38,16 +38,16 @@ $(window).load(function () {
                 console.log(order.name.last[0])
                 if ('a' === order.name.last[0]) {
                     console.log('working!')
-                    $($a).append('<li class="all-a">' + order.name.last + ', ' + order.name.first +'</li>').show('');
+                    $($a).append('<li id="all-a" class="hide">' + order.name.last + ', ' + order.name.first +'</li>').show('');
                 }
                 else if ('b' === order.name.last[0]) {
-                    $($a).append('<li class="all-b hide">' + order.name.last + ', ' + order.name.first + '</li>');
+                    $($a).append('<li id="all-b" class="hide">' + order.name.last + ', ' + order.name.first + '</li>');
                 }
                 else if ('c' === order.name.last[0]) {
-                    $($a).append('<li class="all-c hide">' + order.name.last + ', ' + order.name.first + '</li>');
+                    $($a).append('<li id="all-c" class="hide">' + order.name.last + ', ' + order.name.first + '</li>');
                 }
                 else if ('d' === order.name.last[0]) {
-                    $($a).append('<li class="all-d hide">' + order.name.last + ', ' + order.name.first + '</li>');
+                    $($a).append('<li id="all-d" class="hide">' + order.name.last + ', ' + order.name.first + '</li>');
                 }
             });
 
@@ -57,6 +57,17 @@ $(window).load(function () {
         },
     });
 }); 
+
+$(document).on('click', '#1', function () {
+    $('#all-a').removeAttr('class', 'hide');
+})
+
+$(document).on('click', '#2', function () {
+    $('#all-b').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+})
+
+
+
 
 // $(document).on('click', "#2", function () {
 //     //$('#all-a').hide();
