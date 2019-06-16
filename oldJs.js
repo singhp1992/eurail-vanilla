@@ -274,3 +274,5 @@ $(document).ready(function () {
 // $(document).on('click', '#all-a', function () {
 //     console.log('working')
 // })
+
+// OLD HTML
