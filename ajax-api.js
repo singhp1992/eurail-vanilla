@@ -37,14 +37,38 @@ $(window).load(function () {
 
             $.each(data.results, function (i, order) {
                 console.log(order.name.last[0])
-                if ('b' === order.name.last[0]) {
+                if ('a' === order.name.last[0]) {
                     console.log('working!')
-                    // $('#a').text(order.name.last[i])
                     $($a).append('<li class="more-info">' + order.name.last + ', ' + order.name.first +'</li>');
                 }
                 else {
                     console.log('try again')
-                    // $('#a').text('Sorry no one')
+                }
+            });
+
+            // $(document).on('click', '.more-info', data.results, function (i, order) {
+            //     console.log(order.name.last);
+            // })
+        },
+    });
+}); 
+
+$(document).on('click', "#2", function () {
+    var $a = $('#a')
+    $.ajax({
+        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=100&nat=us,dk,fr,gb',
+        dataType: 'json',
+        success: function (data) {
+            console.log(data.results)
+
+            $.each(data.results, function (i, order) {
+                console.log(order.name.last[0])
+                if ('b' === order.name.last[0]) {
+                    console.log('working!')
+                    $($a).append('<li class="more-info">' + order.name.last + ', ' + order.name.first + '</li>');
+                }
+                else {
+                    console.log('try again')
                 }
             });
 
