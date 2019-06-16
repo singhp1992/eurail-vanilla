@@ -40,7 +40,7 @@ div ul li:after {
     display: block;
     width: 85%; 
     padding-top: 5px;
-    border-bottom: 1px solid grey; 
+    border-bottom: 1px dotted grey; 
 }
 
 /* tabs */
