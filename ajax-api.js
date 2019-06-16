@@ -1,12 +1,15 @@
 //API call when window loads
 $(window).load(function () {
     $.ajax({
-        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=200&nat=us,dk,fr,gb',
+        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=100&nat=us,dk,fr,gb',
         dataType: 'json',
         success: function (data) {
             $.each(data.results, function (i, order) {
                 if ('a' === order.name.last[0]) {
                     $('#a').append('<li id="all-a">' + order.name.last + ', ' + order.name.first +'</li>');
+                    var aNames = order;
+                    // console.log(order)
+                    console.log(aNames.email)
                 }
                 else if ('b' === order.name.last[0]) {
                     $('#b').append('<li id="all-b">' + order.name.last + ', ' + order.name.first + '</li>');
@@ -84,6 +87,10 @@ $(window).load(function () {
                     $('#z').append('<li id="all-z">' + order.name.last + ', ' + order.name.first + '</li>');
                 }
             });
+
+                // $(document).on('click', '#all-a', data.results, function (i, order) {
+                //     console.log(this)
+                // })
         },
     });
 }); 
@@ -168,5 +175,7 @@ $(document).on('click', '#26', function () {
     $('#z').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
 
-
-
+// getting more information
+// $(document).on('click', '#all-a', function () {
+//     console.log('working')
+// })
