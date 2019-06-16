@@ -1,28 +1,3 @@
-// $(document).ready(function () {
-//     $('li').click(function () {
-//         $(this).addClass("active");
-//         $("button").removeClass("active");
-//         var randomAPI = "https://api.randomuser.me/";
-//         var letter = $(this).text();
-//         var randomUserOptions = {
-//             tags: letter,
-//             format: "json"
-//         };
-//         function displayNames(data) {
-//             var letterHTML = '<ul>';
-//             $.each(data.items, function (i, photo) {
-//                 letterHTML += '<li id="a">';
-//                 letterHTML += name.first + ' ' + name.last;
-//             });
-//             letterHTML += '</ul>'
-//             $('.content').append(letterHTML);
-//             console.log(data)
-//         }
-//         $.getJSON(randomAPI, randomUserOptions, displayNames);
-//     });
-
-
-// }); 
 // $(document).on('click', "nav li.active", function () {
 //$(document).on('click', "#1", function () {
 
@@ -53,6 +28,15 @@ $(window).load(function () {
                 else if ('g' === order.name.last[0]) {
                     $('#g').append('<li id="all-g">' + order.name.last + ', ' + order.name.first + '</li>');
                 }
+                else if ('h' === order.name.last[0]) {
+                    $('#h').append('<li id="all-h">' + order.name.last + ', ' + order.name.first + '</li>');
+                }
+                else if ('i' === order.name.last[0]) {
+                    $('#i').append('<li id="all-i">' + order.name.last + ', ' + order.name.first + '</li>');
+                }
+                else if ('j' === order.name.last[0]) {
+                    $('#j').append('<li id="all-j">' + order.name.last + ', ' + order.name.first + '</li>');
+                }
             });
         },
     });
@@ -79,6 +63,15 @@ $(document).on('click', '#6', function () {
 })
 $(document).on('click', '#7', function () {
     $('#g').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+})
+$(document).on('click', '#8', function () {
+    $('#h').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+})
+$(document).on('click', '#9', function () {
+    $('#i').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+})
+$(document).on('click', '#10', function () {
+    $('#j').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
 
 
