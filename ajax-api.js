@@ -13,13 +13,13 @@ $(window).load(function () {
                     // $(document).on('click', '#all-a', aNames, function (i, order) {
                     //     console.log(aNames.email)
                     // })
-                    // $(document).ready(function (li) {
-                    //     if ($(this).hasClass('active')) {
+                    $(document).ready(function (li) {
+                        if ($(this).hasClass('active')) {
                             
-                    //     } else {
-                    //         console.log('working')
-                    //     }
-                    // });
+                        } else {
+                            console.log('working')
+                        }
+                    });
 
                 }
                 else if ('b' === order.name.last[0]) {
