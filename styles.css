@@ -33,6 +33,7 @@ div ul li {
     padding-bottom: 10px;
     padding-top: 5px;
     width: 45%;
+    cursor: pointer;
 }
 
 div ul li:after {
