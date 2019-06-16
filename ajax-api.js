@@ -31,13 +31,9 @@ $(window).load(function () {
         url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=100&nat=us,dk,fr,gb',
         dataType: 'json',
         success: function (data) {
-            console.log(data.results)
-
             $.each(data.results, function (i, order) {
-                console.log(order.name.last[0])
                 if ('a' === order.name.last[0]) {
-                    console.log('working!')
-                    $('#a').append('<li id="all-a">' + order.name.last + ', ' + order.name.first +'</li>').show('');
+                    $('#a').append('<li id="all-a">' + order.name.last + ', ' + order.name.first +'</li>');
                 }
                 else if ('b' === order.name.last[0]) {
                     $('#b').append('<li id="all-b">' + order.name.last + ', ' + order.name.first + '</li>');

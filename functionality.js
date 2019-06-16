@@ -9,8 +9,6 @@
 //     "u","v","w","x","y","z"]
 // }
 
-// console.log(configJson.title)
-
 // Dynamically creating structure
 
 // creating tabs
@@ -98,10 +96,10 @@ $(document).on('click', 'nav li', function () {
 // })
 
 // adding A interactivity
-$(window).load(function (id) {
-    var x = document.getElementById('a');
-    x.style.display = "inline-flex";
-});
+// $(window).load(function (id) {
+//     var x = document.getElementById('a');
+//     x.style.display = "inline-flex";
+// });
 
 // making a disapper when b is clicked
 // $(document).ready(function () {
@@ -131,17 +129,6 @@ $(window).load(function (id) {
 //     x.style.display = "inline-flex";
 // }
 
-// api fetch
-fetch('https://api.randomuser.me/')
-    .then(response => response.json())
-    .then(data => {
-        console.log(data) // Prints result from `response.json()` in getRequest
-
-    })
-    .catch(error => console.error(error))
-
-
-    
 
 
 
