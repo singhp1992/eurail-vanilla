@@ -1,18 +1,26 @@
 //API call when window loads
 $(window).load(function () {
     $.ajax({
-        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=300&nat=us,dk,fr,gb',
+        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=300&nat=us,dk,fr,gb,es,nl,nz',
         dataType: 'json',
         success: function (data) {
             $.each(data.results, function (i, order) {
                 if ('a' === order.name.last[0]) {
                     $('#a').append('<li id="all-a">' + order.name.last + ', ' + order.name.first +'</li>');
-                    var aNames = order;
+                    // var aNames = order;
                     // // console.log(order)
                     // console.log(aNames.email)
-                    $(document).on('click', '#all-a', aNames, function (i, order) {
-                        console.log(aNames.email)
-                    })
+                    // $(document).on('click', '#all-a', aNames, function (i, order) {
+                    //     console.log(aNames.email)
+                    // })
+                    // $(document).ready(function (li) {
+                    //     if ($(this).hasClass('active')) {
+                            
+                    //     } else {
+                    //         console.log('working')
+                    //     }
+                    // });
+
                 }
                 else if ('b' === order.name.last[0]) {
                     $('#b').append('<li id="all-b">' + order.name.last + ', ' + order.name.first + '</li>');
