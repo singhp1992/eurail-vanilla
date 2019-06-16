@@ -38,7 +38,7 @@ $(window).load(function () {
                 console.log(order.name.last[0])
                 if ('a' === order.name.last[0]) {
                     console.log('working!')
-                    $($a).append('<li id="all-a" class="hide">' + order.name.last + ', ' + order.name.first +'</li>').show('');
+                    $($a).append('<li id="all-a">' + order.name.last + ', ' + order.name.first +'</li>').show('');
                 }
                 else if ('b' === order.name.last[0]) {
                     $($a).append('<li id="all-b" class="hide">' + order.name.last + ', ' + order.name.first + '</li>');
