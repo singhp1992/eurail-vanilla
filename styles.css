@@ -3,6 +3,11 @@ header {
   margin: 1em auto;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* cards */
 
 .container {
