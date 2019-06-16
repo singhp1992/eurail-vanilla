@@ -23,7 +23,7 @@
 
 
 // }); 
-// $(document).on('click', "nav li.active", function() {
+// $(document).on('click', "nav li.active", function () {
 
 $(window).load(function () {
     var $a = $('#a')
@@ -36,7 +36,7 @@ $(window).load(function () {
             console.log(data.results)
 
             $.each(data.results, function (i, order) {
-                $($a).append('<li> testing </li>');
+                $($a).append('<li>' + order.name.last + ' ' + order.name.first +'</li>');
             });
         },
     });
