@@ -103,84 +103,100 @@ $(window).load(function () {
 }); 
 
 //hiding other elements when tabs are clicked
-$(document).on('click', '#1', function () {
-    $('#a').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#2', function () {
-    $('#b').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#3', function () {
-    $('#c').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#4', function () {
-    $('#d').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#5', function () {
-    $('#e').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#6', function () {
-    $('#f').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#7', function () {
-    $('#g').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#8', function () {
-    $('#h').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#9', function () {
-    $('#i').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#10', function () {
-    $('#j').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#11', function () {
-    $('#k').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#12', function () {
-    $('#l').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#13', function () {
-    $('#m').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#14', function () {
-    $('#n').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#15', function () {
-    $('#o').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#16', function () {
-    $('#p').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#17', function () {
-    $('#q').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#18', function () {
-    $('#r').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#19', function () {
-    $('#s').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#20', function () {
-    $('#t').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#21', function () {
-    $('#u').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#22', function () {
-    $('#v').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#23', function () {
-    $('#w').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#24', function () {
-    $('#x').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#25', function () {
-    $('#y').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
-$(document).on('click', '#26', function () {
-    $('#z').removeAttr('class', 'hide').siblings().attr('class', 'hide');
-})
+
+$(document).ready(function () {
+    var tabs = {
+        "1": "a", "2": "b", "3": "c", "4": "d", "5": "e", "6": "f",
+        "7": "g", "8": "h", "9": "i", "10": "j", "11": "k", "12": "l", "13": "m", "14": "n",
+        "15": "o", "16": "p", "17": "q", "18": "r", "19": "s", "20": "t", "21": "u", "22": "v",
+        "23": "w", "24": "x", "25": "y", "26": "z"
+    };
+    $.each(tabs, function (key, value) {
+        console.log(key, value)
+        $(document).on('click','#' + key, function () {
+            $('#' + value).removeAttr('class', 'hide').siblings().attr('class', 'hide');
+        })
+    });
+});
+
+// $(document).on('click', '#1', function () {
+//     $('#a').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#2', function () {
+//     $('#b').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#3', function () {
+//     $('#c').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#4', function () {
+//     $('#d').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#5', function () {
+//     $('#e').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#6', function () {
+//     $('#f').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#7', function () {
+//     $('#g').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#8', function () {
+//     $('#h').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#9', function () {
+//     $('#i').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#10', function () {
+//     $('#j').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#11', function () {
+//     $('#k').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#12', function () {
+//     $('#l').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#13', function () {
+//     $('#m').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#14', function () {
+//     $('#n').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#15', function () {
+//     $('#o').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#16', function () {
+//     $('#p').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#17', function () {
+//     $('#q').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#18', function () {
+//     $('#r').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#19', function () {
+//     $('#s').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#20', function () {
+//     $('#t').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#21', function () {
+//     $('#u').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#22', function () {
+//     $('#v').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#23', function () {
+//     $('#w').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#24', function () {
+//     $('#x').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#25', function () {
+//     $('#y').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
+// $(document).on('click', '#26', function () {
+//     $('#z').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+// })
 
 // getting more information
 // $(document).on('click', '#all-a', function () {
