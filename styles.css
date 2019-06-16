@@ -18,15 +18,14 @@ div ul {
     list-style: none;
     text-align: left;
     padding: 10px;
-    display: inline-flex;
+    display: flex;
     /* width: fit-content; */
     width: 95%;
     height: inherit;
     margin: 1px auto;
     flex-direction: row;
     flex-wrap: wrap;
-    display: inline-flex;
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 div ul li {
@@ -42,16 +41,20 @@ div ul li:after {
     width: 85%; 
     padding-top: 5px;
     border-bottom: 1px dotted grey; 
+    z-index:1;
 }
 
 div ul li.active {
-   color: orange;
-   height: 50%;
-   z-index: 10;
-   position: relative;
+   color: black;
+   height: 30%;
+   z-index: 20;
+   position: sticky;
    background-color:#c4c4c4 ;
    border-bottom: none;
    /* box-shadow: 1px 1px 1px 1px rgb(116, 115, 115); */
+   border-radius: 10px;
+   padding-left: 10px;
+   text-transform: uppercase;
 }
 
 /* tabs */
