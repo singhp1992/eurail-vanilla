@@ -44,6 +44,10 @@ div ul li:after {
     border-bottom: 1px dotted grey; 
 }
 
+div ul li.active {
+    color: blue;
+}
+
 /* tabs */
 
 nav.tabs li {
