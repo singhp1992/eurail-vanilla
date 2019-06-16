@@ -40,6 +40,11 @@ $(document).on('click', 'nav li', function () {
     $(this).addClass('active').siblings().removeAttr('class', 'active')
 })
 
+// Adding ACTIVE to li elements
+$(document).on('click', 'div ul li', function () {
+    $(this).addClass('active').siblings().removeAttr('class', 'active')
+})
+
 // // Creating another div below the tabs
 // const $div = $('<div> </div>');
 
