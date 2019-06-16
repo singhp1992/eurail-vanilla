@@ -1,6 +1,4 @@
-// $(document).on('click', "nav li.active", function () {
-//$(document).on('click', "#1", function () {
-
+//API call when window loads
 $(window).load(function () {
     $.ajax({
         url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=200&nat=us,dk,fr,gb',
