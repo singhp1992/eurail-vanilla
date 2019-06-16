@@ -25,10 +25,16 @@
 // }); 
 $('#result').click(function() {
     $.ajax({
-        url: 'https://randomuser.me/api/',
+        url: 'https://randomuser.me/api/?results=6',
         dataType: 'json',
         success: function (data) {
-            $("#a li").text(data.results[0].name.first + ', ' + data.results[0].name.last);
+            $("#a").append('<li>' + data.results[0].name.first + ', ' + data.results[0].name.last + '</li>');
+            $("#a").append('<li>' + data.results[1].name.first + ', ' + data.results[1].name.last + '</li>');
+            $("#a").append('<li>' + data.results[2].name.first + ', ' + data.results[2].name.last + '</li>');
+            $("#a").append('<li>' + data.results[3].name.first + ', ' + data.results[3].name.last + '</li>');
+            $("#a").append('<li>' + data.results[4].name.first + ', ' + data.results[4].name.last + '</li>');
+            $("#a").append('<li>' + data.results[5].name.first + ', ' + data.results[5].name.last + '</li>');
+
             console.log(data)
         },
 });
