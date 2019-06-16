@@ -59,13 +59,19 @@ $(window).load(function () {
 }); 
 
 $(document).on('click', '#1', function () {
-    $('#all-a').removeAttr('class', 'hide');
+    $('#all-a').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
 
 $(document).on('click', '#2', function () {
     $('#all-b').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
+$(document).on('click', '#3', function () {
+    $('#all-c').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+})
 
+$(document).on('click', '#4', function () {
+    $('#all-d').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+})
 
 
 
