@@ -3,6 +3,11 @@ header {
   margin: 1em auto;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* cards */
 
 .container {
@@ -18,21 +23,24 @@ div ul {
     list-style: none;
     text-align: left;
     padding: 10px;
-    display: inline-flex;
+    display: flex;
     /* width: fit-content; */
     width: 95%;
     height: inherit;
     margin: 1px auto;
     flex-direction: row;
     flex-wrap: wrap;
-    display: inline-flex;
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 div ul li {
     padding-bottom: 10px;
     padding-top: 5px;
     width: 45%;
+    cursor: pointer;
+    /* text-decoration: underline;
+    text-decoration-style: dotted; */
+    /* border-bottom: 1px dotted grey;  */
 }
 
 div ul li:after {
@@ -40,7 +48,20 @@ div ul li:after {
     display: block;
     width: 85%; 
     padding-top: 5px;
-    border-bottom: 1px solid grey; 
+    border-bottom: 1px dotted grey; 
+    z-index:1;
+}
+
+div ul li.active {
+   /* color: black;
+   height: 30%;
+   z-index: 20;
+   position: sticky;
+   background-color:#c4c4c4 ;
+   border-bottom: none;
+    border-radius: 10px;
+   padding-left: 10px; */
+   text-transform: uppercase;
 }
 
 /* tabs */
@@ -90,36 +111,27 @@ div ul li:nth-of-type(1n+9) {
     height: 75%;  
     text-align: center;
 } 
-/* #content_2, #content_3 { display:none; } */
 
-/* ul.tabs {
-    margin:0px; padding:0px;
-    margin-top:5px;
-    margin-bottom:6px;
-} */
+/* individual name cards */
 
-/* .content ul {
-    margin:0px;
-    padding:20px;
-    width: 45%;
+.cards {
+    text-align: left;
+    padding-left: 50px;
+    margin: 1em auto;
+    border: 1px solid black;
+    width: 90%;
+    height: 80%;
 }
-.content ul li {
-    list-style:none;
-    border-bottom:1px solid #d6dde0;
-    padding-top:25px;
-    padding-bottom: 3px;
-    font-size:13px;
+
+.cards img {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
 }
-.content ul li a {
-    text-decoration:none;
-    color:#000000;
-}
-.content ul li a small {
-    color:#8b959c;
-    font-size:9px;
-    text-transform:uppercase;
-    font-family:Verdana, Arial, Helvetica, sans-serif;
-    position:relative;
-    left:4px;
-    top:0px;
-} */
+
+
+
