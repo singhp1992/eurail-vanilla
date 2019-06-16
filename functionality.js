@@ -1,16 +1,3 @@
-// Given information
-
-// var configJson = {
-//     "title": "Contact List", 
-//     "uri":"https://api.randomuser.me/",
-//     "numberCards": 120,
-//     "tabs": ["a", "b", "c", "d", "e", "f", "g","h",
-//     "i", "j", "k","l","m","n","o","p","q","r","s","t",
-//     "u","v","w","x","y","z"]
-// }
-
-// Dynamically creating structure
-
 // creating tabs
 $(document).ready(function () {
     var tabs = { "1": "a", "2": "b", "3": "c", "4": "d", "5": "e", "6": "f",
