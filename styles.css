@@ -119,7 +119,7 @@ div ul li:nth-of-type(1n+9) {
     padding-left: 50px;
     margin: 1em auto;
     border: 1px solid black;
-    width: 75%;
+    width: 90%;
     height: 80%;
 }
 
@@ -133,36 +133,5 @@ div ul li:nth-of-type(1n+9) {
     border: 1px solid black;
 }
 
-/* #content_2, #content_3 { display:none; } */
 
-/* ul.tabs {
-    margin:0px; padding:0px;
-    margin-top:5px;
-    margin-bottom:6px;
-} */
 
-/* .content ul {
-    margin:0px;
-    padding:20px;
-    width: 45%;
-}
-.content ul li {
-    list-style:none;
-    border-bottom:1px solid #d6dde0;
-    padding-top:25px;
-    padding-bottom: 3px;
-    font-size:13px;
-}
-.content ul li a {
-    text-decoration:none;
-    color:#000000;
-}
-.content ul li a small {
-    color:#8b959c;
-    font-size:9px;
-    text-transform:uppercase;
-    font-family:Verdana, Arial, Helvetica, sans-serif;
-    position:relative;
-    left:4px;
-    top:0px;
-} */
