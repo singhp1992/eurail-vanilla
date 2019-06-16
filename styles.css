@@ -14,7 +14,7 @@ header {
 
 /* CARD: the names starting with a */
 
-#a {
+div ul {
     list-style: none;
     text-align: left;
     padding: 10px;
@@ -29,13 +29,13 @@ header {
     text-transform: capitalize
 }
 
-#a li {
+div ul li {
     padding-bottom: 10px;
     padding-top: 5px;
     width: 45%;
 }
 
-#a li:after {
+div ul li:after {
     content: "";
     display: block;
     width: 85%; 

@@ -27,9 +27,8 @@
 //$(document).on('click', "#1", function () {
 
 $(window).load(function () {
-    var $a = $('#a')
     $.ajax({
-        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=1000&nat=us,dk,fr,gb',
+        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=100&nat=us,dk,fr,gb',
         dataType: 'json',
         success: function (data) {
             console.log(data.results)
@@ -38,16 +37,16 @@ $(window).load(function () {
                 console.log(order.name.last[0])
                 if ('a' === order.name.last[0]) {
                     console.log('working!')
-                    $($a).append('<li id="all-a">' + order.name.last + ', ' + order.name.first +'</li>').show('');
+                    $('#a').append('<li id="all-a">' + order.name.last + ', ' + order.name.first +'</li>').show('');
                 }
                 else if ('b' === order.name.last[0]) {
-                    $($a).append('<li id="all-b" class="hide">' + order.name.last + ', ' + order.name.first + '</li>');
+                    $('#b').append('<li id="all-b">' + order.name.last + ', ' + order.name.first + '</li>');
                 }
                 else if ('c' === order.name.last[0]) {
-                    $($a).append('<li id="all-c" class="hide">' + order.name.last + ', ' + order.name.first + '</li>');
+                    $('#c').append('<li id="all-c">' + order.name.last + ', ' + order.name.first + '</li>');
                 }
                 else if ('d' === order.name.last[0]) {
-                    $($a).append('<li id="all-d" class="hide">' + order.name.last + ', ' + order.name.first + '</li>');
+                    $('#d').append('<li id="all-d">' + order.name.last + ', ' + order.name.first + '</li>');
                 }
             });
 
@@ -59,18 +58,18 @@ $(window).load(function () {
 }); 
 
 $(document).on('click', '#1', function () {
-    $('#all-a').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+    $('#a').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
 
 $(document).on('click', '#2', function () {
-    $('#all-b').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+    $('#b').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
 $(document).on('click', '#3', function () {
-    $('#all-c').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+    $('#c').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
 
 $(document).on('click', '#4', function () {
-    $('#all-d').removeAttr('class', 'hide').siblings().attr('class', 'hide');
+    $('#d').removeAttr('class', 'hide').siblings().attr('class', 'hide');
 })
 
 

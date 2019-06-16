@@ -42,23 +42,23 @@ $(document).on('click', 'nav li', function () {
     $(this).addClass('active').siblings().removeAttr('class', 'active')
 })
 
-// Creating another div below the tabs
-const $div = $('<div> </div>');
+// // Creating another div below the tabs
+// const $div = $('<div> </div>');
 
-// Appending div into the container
-$('.container').append($div)
+// // Appending div into the container
+// $('.container').append($div)
 
-// add a class name to the div
-$('div').addClass('content')
+// // add a class name to the div
+// $('div').addClass('content')
 
-// adding a ul to the div
-const $ul = $('<ul>  </ul>')
+// // adding a ul to the div
+// const $ul = $('<ul>  </ul>')
 
-// appending into the div
-$('.content').append($ul)
+// // appending into the div
+// $('.content').append($ul)
 
-// adding ID to the UL 
-$('ul').attr('id', 'a')
+// // adding ID to the UL 
+// $('ul').attr('id', 'a')
 
 //adding uls of each alphabet
 // $(document).ready(function () {
