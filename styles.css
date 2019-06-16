@@ -70,7 +70,7 @@ nav.tabs li {
 }
 
 nav.tabs li {
-    background-color:#a8a8a8;
+    background-color: rgb(102, 102, 102);
     color: white;
     padding:8px 14px 6px 14px;
     text-decoration:none;
