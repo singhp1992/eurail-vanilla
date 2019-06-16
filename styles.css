@@ -45,7 +45,13 @@ div ul li:after {
 }
 
 div ul li.active {
-    color: blue;
+   color: orange;
+   height: 50%;
+   z-index: 10;
+   position: relative;
+   background-color:#c4c4c4 ;
+   border-bottom: none;
+   /* box-shadow: 1px 1px 1px 1px rgb(116, 115, 115); */
 }
 
 /* tabs */
