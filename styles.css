@@ -109,6 +109,8 @@ div ul li:nth-of-type(1n+9) {
     height: 75%;  
     text-align: center;
     margin-top: -3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 } 
 
 .lighten {
@@ -124,6 +126,7 @@ div ul li:nth-of-type(1n+9) {
     border: 1px solid black;
     width: 90%;
     height: 80%;
+    border-radius: 10px;
 }
 
 .cards img {
