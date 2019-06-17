@@ -42,7 +42,7 @@ div ul {
 /* after button is pressed */
 .flexer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
 }
 

@@ -18,7 +18,7 @@ $(window).load(function () {
     });
 
     $.ajax({
-        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=200&nat=us,dk,fr,gb,es,nz',
+        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=200&nat=us,',
         dataType: 'json',
         success: function (data) {
             console.log(data)
