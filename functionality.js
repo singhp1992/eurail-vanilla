@@ -27,7 +27,7 @@ $(window).load(function () {
                     };
                     $.each(tabs, function (key, value) {
                         if (value === order.name.last[0]) {
-                            $('#' + value).append('<li id="all-"' + value + ">" + order.name.last + ', ' + order.name.first + '</li>');
+                            $('#' + value).append('<li id="all-' + value + '"' + '>' + order.name.last + ', ' + order.name.first + '</li>');
                         }
                     });
                 });
