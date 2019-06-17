@@ -10,6 +10,10 @@ $(window).load(function () {
         $(".content").append('<ul id='+ '"' + value + '"' + "class='hide'" + "> </ul>");
     });
 
+    // creating .cards div
+    $(".cards").append('<img src="https://randomuser.me/api/portraits/women/85.jpg">');
+    $(".cards").append('<p class="underline" id="e-mail">E-mail:</p>');
+
     $.ajax({
         url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=200&nat=us,dk,fr,gb,es,nz',
         dataType: 'json',
@@ -54,6 +58,9 @@ $(document).ready(function () {
     });
 });
 
+// dynamically creating div="cards" content
+
+
 // Adding ids to every <li> tags 
 $(document).ready(function() {
     $("nav li").each(function (i) {
@@ -78,31 +85,34 @@ $(document).on('click', 'div ul li', function () {
 
 // dynamically showing individual cards
 $(document).on('click', 'div ul li', function () {
-    $.ajax({
-        url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=1&nat=us,dk,fr,gb,es,nz',
-        dataType: 'json',
-        success: function (data) {
-            console.log(data)
-            // $.each(data.results, function (i, order) {
-            //     $(document).ready(function () {
-            //         var tabs = {
-            //             "1": "a", "2": "b", "3": "c", "4": "d", "5": "e", "6": "f",
-            //             "7": "g", "8": "h", "9": "i", "10": "j", "11": "k", "12": "l", "13": "m", "14": "n",
-            //             "15": "o", "16": "p", "17": "q", "18": "r", "19": "s", "20": "t", "21": "u", "22": "v",
-            //             "23": "w", "24": "x", "25": "y", "26": "z"
-            //         };
-            //         $.each(tabs, function (key, value) {
-            //             if (value === order.name.last[0]) {
-            //                 $('#' + value).append('<li id="all-' + value + '"' + '>' + order.name.last + ', ' + order.name.first + '</li>');
-            //             }
-            //         });
-            //     });
-            // });
-        },
-    });
+    // create the img src
+    $(".cards").append('<img src="https://randomuser.me/api/portraits/women/85.jpg">');
+
 })
 
 
 
 
 
+// $.ajax({
+//     url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=1&nat=us,dk,fr,gb,es,nz',
+//     dataType: 'json',
+//     success: function (data) {
+//         console.log(data)
+        // $.each(data.results, function (i, order) {
+        //     $(document).ready(function () {
+        //         var tabs = {
+        //             "1": "a", "2": "b", "3": "c", "4": "d", "5": "e", "6": "f",
+        //             "7": "g", "8": "h", "9": "i", "10": "j", "11": "k", "12": "l", "13": "m", "14": "n",
+        //             "15": "o", "16": "p", "17": "q", "18": "r", "19": "s", "20": "t", "21": "u", "22": "v",
+        //             "23": "w", "24": "x", "25": "y", "26": "z"
+        //         };
+        //         $.each(tabs, function (key, value) {
+        //             if (value === order.name.last[0]) {
+        //                 $('#' + value).append('<li id="all-' + value + '"' + '>' + order.name.last + ', ' + order.name.first + '</li>');
+        //             }
+        //         });
+        //     });
+        // });
+//     },
+// });
