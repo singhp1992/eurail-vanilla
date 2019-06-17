@@ -11,11 +11,11 @@ $(window).load(function () {
     });
 
     // creating .cards div
-    $(".cards").append('<img src="https://randomuser.me/api/portraits/women/85.jpg">');
-    var cardInfo = ['E-mail', 'Phone', 'Street', 'City', 'State', 'Postcode']
-    $.each(cardInfo, function (i) {
-        $(".cards").append('<p class="underline" id=' + '"' + cardInfo[i] + '"' + ">" + cardInfo[i] + ": </ul>");
-    });
+    // $(".cards").append('<img src="https://randomuser.me/api/portraits/women/85.jpg">');
+    // var cardInfo = ['E-mail', 'Phone', 'Street', 'City', 'State', 'Postcode']
+    // $.each(cardInfo, function (i) {
+    //     $(".cards").append('<p class="underline" id=' + '"' + cardInfo[i] + '"' + ">" + cardInfo[i] + ": </ul>");
+    // });
 
     $.ajax({
         url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=200&nat=us,dk,fr,gb,es,nz',
@@ -57,6 +57,7 @@ $(document).ready(function () {
     $.each(tabs, function (key, value) {
         $(document).on('click', '#' + key, function () {
             $('#' + value).removeAttr('class', 'hide').siblings().attr('class', 'hide');
+            $('#info').removeAttr('class', 'hide')
         })
     });
 });
@@ -89,8 +90,9 @@ $(document).on('click', 'div ul li', function () {
 // alerting the div when button is clicked
 $(document).on('click', 'div ul li', function () {
     $('.content').addClass('flexer')
-    $('div ul').addClass('newNew')
-    // $('.content').append('<div class="half">TESTING TESTING TESTING TESTING TESTING TESTING TESTING</div>')
+    $('div ul').addClass('half')
+    $('#info').addClass('cards')
+    // $('#info').removeAttr('class', '.hide')
 })
 
 

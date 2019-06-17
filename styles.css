@@ -26,7 +26,7 @@ div ul {
     text-transform: capitalize;
 }
 
-.newNew {
+.half {
     list-style: none;
     text-align: left;
     padding: 10px;
@@ -139,7 +139,7 @@ div ul li:nth-of-type(1n+9) {
 
 /* individual name cards */
 
-.cards {
+/* .cards {
     text-align: left;
     padding-left: 50px;
     margin: 2px auto;
@@ -157,6 +157,15 @@ div ul li:nth-of-type(1n+9) {
     height: 150px;
     width: 150px;
     border: 1px solid black;
+} */
+
+.cards {
+    width: 45%;
+    border: 1px solid black;
+    margin: 10px;
+    height: auto;
+    border-radius: 10px;
+    /* display: none; */
 }
 
 
