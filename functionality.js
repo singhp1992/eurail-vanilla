@@ -85,6 +85,13 @@ $(document).on('click', 'div ul li', function () {
     $(this).addClass('active').siblings().removeAttr('class', 'active')
 })
 
+// dynamically showing individual cards
+$(document).on('click', 'div ul li', function () {
+    console.log(this)
+})
+
+
+
 // // Creating another div below the tabs
 // const $div = $('<div> </div>');
 
