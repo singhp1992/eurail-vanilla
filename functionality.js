@@ -57,7 +57,7 @@ $(document).ready(function () {
     $.each(tabs, function (key, value) {
         $(document).on('click', '#' + key, function () {
             $('#' + value).removeAttr('class', 'hide').siblings().attr('class', 'hide');
-            $('#info').removeAttr('class', 'hide')
+            $('#info').addClass('hide')
         })
     });
 });
@@ -91,10 +91,16 @@ $(document).on('click', 'div ul li', function () {
 $(document).on('click', 'div ul li', function () {
     $('.content').addClass('flexer')
     $('div ul').addClass('half')
+    $('#info').removeAttr('class', 'hide')
     $('#info').addClass('cards')
-    // $('#info').removeAttr('class', '.hide')
 })
 
+//when 
+    // $(".cards").append('<img src="https://randomuser.me/api/portraits/women/85.jpg">');
+    // var cardInfo = ['E-mail', 'Phone', 'Street', 'City', 'State', 'Postcode']
+    // $.each(cardInfo, function (i) {
+    //     $(".cards").append('<p class="underline" id=' + '"' + cardInfo[i] + '"' + ">" + cardInfo[i] + ": </ul>");
+    // });
 
 
 
