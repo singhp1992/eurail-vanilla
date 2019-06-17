@@ -11,11 +11,11 @@ $(window).load(function () {
     });
 
     // creating .cards div
-    // $(".cards").append('<img src="https://randomuser.me/api/portraits/women/85.jpg">');
-    // var cardInfo = ['E-mail', 'Phone', 'Street', 'City', 'State', 'Postcode']
-    // $.each(cardInfo, function (i) {
-    //     $(".cards").append('<p class="underline" id=' + '"' + cardInfo[i] + '"' + ">" + cardInfo[i] + ": </ul>");
-    // });
+    $(".cards").append('<img src="https://randomuser.me/api/portraits/women/85.jpg">');
+    var cardInfo = ['E-mail', 'Phone', 'Street', 'City', 'State', 'Postcode']
+    $.each(cardInfo, function (i) {
+        $(".cards").append('<p class="underline" id=' + '"' + cardInfo[i] + '"' + ">" + cardInfo[i] + ": </ul>");
+    });
 
     $.ajax({
         url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=200&nat=us,dk,fr,gb,es,nz',
