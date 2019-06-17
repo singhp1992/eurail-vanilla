@@ -26,6 +26,26 @@ div ul {
     text-transform: capitalize;
 }
 
+.newNew {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    width: 50%;
+    height: inherit;
+    margin: 2px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+
+/* after button is pressed */
+.flexer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 div ul li {
     padding-bottom: 10px;
     padding-top: 5px;

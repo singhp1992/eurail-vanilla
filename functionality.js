@@ -12,12 +12,9 @@ $(window).load(function () {
 
     // creating .cards div
     $(".cards").append('<img src="https://randomuser.me/api/portraits/women/85.jpg">');
-    var cardInfo = {
-        "2": "E-mail", "3": "Phone", "4": "Street", "5": "City", "6": "State",
-        "7": "Postcode"
-    };
-    $.each(cardInfo, function (key, value) {
-        $(".cards").append('<p class="underline" id=' + '"' + value + '"' + ">" + value + ": </ul>");
+    var cardInfo = ['E-mail', 'Phone', 'Street', 'City', 'State', 'Postcode']
+    $.each(cardInfo, function (i) {
+        $(".cards").append('<p class="underline" id=' + '"' + cardInfo[i] + '"' + ">" + cardInfo[i] + ": </ul>");
     });
 
     $.ajax({
@@ -89,11 +86,11 @@ $(document).on('click', 'div ul li', function () {
     $(this).addClass('active').siblings().removeAttr('class', 'active')
 })
 
-// dynamically showing individual cards
+// alerting the div when button is clicked
 $(document).on('click', 'div ul li', function () {
-    // create the img src
-    $(".cards").append('<img src="https://randomuser.me/api/portraits/women/85.jpg">');
-
+    $('.content').addClass('flexer')
+    $('div ul').addClass('newNew')
+    // $('.content').append('<div class="half">TESTING TESTING TESTING TESTING TESTING TESTING TESTING</div>')
 })
 
 
