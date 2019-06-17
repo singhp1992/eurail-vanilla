@@ -12,7 +12,13 @@ $(window).load(function () {
 
     // creating .cards div
     $(".cards").append('<img src="https://randomuser.me/api/portraits/women/85.jpg">');
-    $(".cards").append('<p class="underline" id="e-mail">E-mail:</p>');
+    var cardInfo = {
+        "2": "E-mail", "3": "Phone", "4": "Street", "5": "City", "6": "State",
+        "7": "Postcode"
+    };
+    $.each(cardInfo, function (key, value) {
+        $(".cards").append('<p class="underline" id=' + '"' + value + '"' + ">" + value + ": </ul>");
+    });
 
     $.ajax({
         url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=200&nat=us,dk,fr,gb,es,nz',
