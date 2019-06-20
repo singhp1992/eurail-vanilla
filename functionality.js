@@ -17,11 +17,10 @@ $(window).load(function () {
         $(".cards").append('<p class="underline" id=' + '"' + cardInfo[i] + '"' + ">" + cardInfo[i] + ": </ul>");
     });
 
-    $.ajax({
+     $.ajax({
         url: 'https://api.randomuser.me/?inc=gender,name,nat,email&results=200&nat=us,',
         dataType: 'json',
         success: function (data) {
-            console.log(data)
             $.each(data.results, function (i, order) {
                 $(document).ready(function () {
                     var tabs = {
